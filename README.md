@@ -10,8 +10,6 @@ A RAG-based chatbot that ingests the Aetna Illinois Member Handbook and answers 
 - FAISS vector store with section metadata filtering
 - FastAPI backend
 - Chainlit chat UI
-- Loguru + Sentry for logging
-- Docker + Render for deployment
 
 ## Setup
 1. `git clone https://github.com/fsyeda/CVSTest.git`
