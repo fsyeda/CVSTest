@@ -16,8 +16,6 @@ A RAG-based chatbot that ingests the Aetna Illinois Member Handbook and answers 
 ## Setup
 1. `git clone https://github.com/fsyeda/CVSTest.git`
 2. Copy `.env.example` to `.env` and fill in keys
-3. `docker build -t rag-chatbot .`
-4. `docker run -p 8000:8000 rag-chatbot`
 
 ## Usage
 - Chat via Chainlit UI at `http://localhost:8000`
