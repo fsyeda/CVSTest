@@ -24,15 +24,15 @@ async def main(message: cl.Message):
     """
     from loguru import logger
     question = message.content
-    logger.info(f"🔍 Received question: {question}")
+    logger.info(f"Received question: {question}")
     chunks = await retrieve(question, k=5)
-    logger.info(f"🔢 Retrieved {len(chunks)} chunks")
+    logger.info(f"Retrieved {len(chunks)} chunks")
     if not chunks:
         await cl.Message(content="Sorry, I couldn’t find any relevant information.").send()
         return
 
     answer = generate_answer(chunks, question)
-    logger.info(f"💬 Sending answer: {answer[:150]}…")
+    logger.info(f"Sending answer: {answer[:150]}…")
     await cl.Message(content=answer).send()
 
 # end of chainlit_app.py
